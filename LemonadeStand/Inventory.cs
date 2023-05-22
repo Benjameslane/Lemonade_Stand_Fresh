@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LemonadeStand.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace LemonadeStand
         public List<SugarCube> sugarCubes;
         public List<IceCube> iceCubes;
         public List<Cup> cups;
+        public List<LemonadePitcher> lemonadePitcher;
 
         // constructor (SPAWNER)
         public Inventory()
@@ -63,6 +65,9 @@ namespace LemonadeStand
                 cups.Add(cup);
             }
         }
+
+
+        
 
 
     }

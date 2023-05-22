@@ -39,6 +39,12 @@ namespace LemonadeStand
 
             return quantityOfItem;
         }
+       
+        //Change Recipe
+        //Access Store
+        //Change lemonade price
+        //Add Player
+
 
     }
 }
