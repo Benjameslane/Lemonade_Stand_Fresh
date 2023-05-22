@@ -13,10 +13,12 @@ namespace LemonadeStand
 
 
     {
+
         public List<Player> players;
         private Player player;
         private List<Day> days;
         private int currentDay;
+        Day day = new Day();
 
 
 
@@ -25,7 +27,6 @@ namespace LemonadeStand
             player = new Player();
             days = new List<Day>();
             currentDay = 0;
-            
 
             for (int i = 0; i < 7; i++)
             {
@@ -49,7 +50,8 @@ namespace LemonadeStand
                 dailyTotal = player.wallet.Money;
                 StartDay();
 
-                GetWeatherForecastWeek();
+                day.GetWeatherForecastToday();
+                //GetWeatherForecastWeek();
                 BuyItems();
 
                 player.recipe.DisplayRecipe();

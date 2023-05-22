@@ -29,13 +29,13 @@ namespace LemonadeStand
         {
             Console.WriteLine($"Your recipe currently consists of:\n{numberOfLemons} lemons per pitcher\n{numberOfSugarCubes} sugar cubes per pitcher\n{numberOfIceCubes} ice cubes per pitcher");
         }
-        //public int ChangeRecipe()
+        
         
 
         }
 
 
-        //  Able to change recipe
+       
 
     }
 

@@ -10,23 +10,28 @@ namespace LemonadeStand
     {
        
 
-        Random random;
+        public Random random;
         public string condition;
         public int temperature;
         private List<string> weatherConditions;
-        public string predicatedForecast;
         public int weatherIndex;
+
+
 
         public Weather()
         {
             random = new Random();
-            weatherIndex = random.Next(4);
-            List<string> weatherConditions = new List<string>  {"rainy", "sunny", "cloudy", "drought"};
-            temperature = random.Next(50, 101);
-            predicatedForecast = weatherConditions[weatherIndex];
-           
+            weatherConditions = new List<string> { "rainy", "sunny", "cloudy", "drought" };
+
         }
         
-       
+        
+       public void PredicatedForecast()
+        {
+           weatherIndex = random.Next(4);
+           temperature = random.Next(50, 101);
+           condition = weatherConditions[weatherIndex];
+        }
+
     }
 }

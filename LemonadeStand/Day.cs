@@ -8,15 +8,17 @@ namespace LemonadeStand
 {
     internal class Day
     {
+        public Weather weather;
+        public List<Customer> customers;
 
         public Day()
         {
             weather = new Weather();
             customers = new List<Customer>();
+           
         }
 
-        public Weather weather;
-        public List<Customer> customers;
+        
      
         public double SimulateDay(Player player)
             
@@ -45,10 +47,11 @@ namespace LemonadeStand
       
         
         }
-        public void GetWeatherForecastToday()                                            //Here is a good example of SRP!!!!!!!
+        public void GetWeatherForecastToday()                                          
         {
-            
-                Console.WriteLine($"The forecast is {weather.predicatedForecast}");
+           
+            weather.PredicatedForecast();
+            Console.WriteLine($"Today's forecast is {weather.condition} and {weather.temperature} degrees.");
         }
 
     }
